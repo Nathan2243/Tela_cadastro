@@ -55,7 +55,7 @@ class Validator {
   
       let inputLength = input.value.length;
   
-      let errorMessage = `O campo precisa ter pelo menos ${minValue} caracteres`;
+      let errorMessage = `O campo precisa ter pelo menos ${minValue} dígitos`;
   
       if(inputLength < minValue) {
         this.printMessage(input, errorMessage);
@@ -68,7 +68,7 @@ class Validator {
   
       let inputLength = input.value.length;
   
-      let errorMessage = `O campo precisa ter menos que ${maxValue} caracteres`;
+      let errorMessage = `O campo precisa ter menos que ${maxValue} dígitos`;
   
       if(inputLength > maxValue) {
         this.printMessage(input, errorMessage);
